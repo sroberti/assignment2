@@ -12,6 +12,8 @@ private:
   const double max_mileage = 0.5;
   const double mileage;
 
+  double generateRandomizedMileage();
+
 public:
   explicit Skateboard(string brand, string model);
 
