@@ -8,6 +8,8 @@
 
 class Skateboard : public Vehicle {
 private:
+  const double min_mileage = 0.1;
+  const double max_mileage = 0.5;
   const double mileage;
 
 public:

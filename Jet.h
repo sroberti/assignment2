@@ -10,6 +10,9 @@
 class Jet : public PoweredVehicle {
 
 private:
+  const double min_mileage = 40;
+  const double max_mileage = 100;
+
   const int numberOfEngines;
   double mileage;
 

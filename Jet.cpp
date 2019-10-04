@@ -5,16 +5,13 @@
 #include <random>
 #include <cmath>
 
-// Define constants
-#define MILEAGE_MIN 40
-#define MILEAGE_MAX 100
 
 int Jet::generateRandomizedMileage()
 {
   // Using example code from
   // http://www.cplusplus.com/reference/random/
   std::default_random_engine generator;
-  std::uniform_int_distribution<int> dist(MILEAGE_MIN, MILEAGE_MAX);
+  std::uniform_int_distribution<int> dist(min_mileage, max_mileage);
   return dist(generator);
 }
 
