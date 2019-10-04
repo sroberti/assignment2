@@ -76,6 +76,13 @@ on conflict resolution is greatly reduced.
 
 
 
+Section 5:
+The Driving Simulator uses both polymorphism and encapsulation.  The test driver
+makes function calls to the base Vehicle class, and each derived class provides
+a different implementation of those functions.  In addition, each of the classes
+has some hidden data that cannot be mutated by other parts of the program.
+
+
 
 
 
