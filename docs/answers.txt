@@ -1,0 +1,81 @@
+(a):
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 383 bytes | 383.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/sroberti/assignment2.git
+   f4975e5..35e6f9e  master -> master
+
+(b):
+8
+
+I used "git log | grep commit -c" to get the count (requires bash).
+
+(c):
+.gitignore was last modified on September 25.
+
+I used "git log .gitignore" to find this.
+
+(d):
+Git branches allow multiple developers to work on a project and make small,
+incomplete changes (that may temporarily break the project) without interfering
+with other team members' work.
+
+Git branches also let teams create versions of a project that is identical to a
+master version except for changes relating to a specific new feature or change.
+This allows faster testing and less confusing development, as it isolates
+potential sources of new problems to only include whatever is currently being
+worked on.
+
+(e):
+"git log" shows info from every prior commit (assuming the user has not set
+length limits in the command line options), while "git status" shows info from
+the current state of the repository.  This includes staging info for changes
+that have not been committed.
+
+(f):
+"git log Vehicle.h"
+
+(g):
+"git log --grep file"
+
+(h):
+I: Inheritance is the concept of sharing functionality between types by defining
+a base class and allowing any number of classes to access some of its
+functionality.
+
+II: Polymorphism is the idea that code designed to process one type of data can
+also process the entire set of types that inherit from the specified type.  In
+other words, two classes may have the same or similar interfaces (allowing them
+to be interacted with the same way), but different implementation details.
+
+III: Because classes often rely on some invariant based on their state, they
+must sometimes be defined to include the only code that can mutate this state,
+in order to protect their invariant.  Encapsulation is supported by language
+features such as C++'s private/protected keywords, and allows programmers to
+make logical guarantees about the ways an object's state can change.
+
+(i):
+In the "Dictator and Lieutenants" workflow, there is an added layer of
+lieutenants responsible for resolving merge conflicts for a subset of developers.
+This allows the top-level manager to resolve fewer total conflicts.
+
+(j):
+A centralized workflow places the responsibility of merge conflict resolution
+on each individual developer.  This means that every single team member must
+reconcile their changes with 99 other potential sets of changes every time
+they push.  A D&L workflow rectifies this by dividing developers into groups and
+assigning a lieutenant in charge of managing conflict resolution only for that
+group.  A top-level manager then rectifies the much-smaller set of conflicts
+from changes pushed by the lieutenants.  In total, the amount of effort spent
+on conflict resolution is greatly reduced.
+
+
+
+
+
+
