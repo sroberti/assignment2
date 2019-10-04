@@ -29,11 +29,11 @@ Jet::Jet(string manufacturer, string model,
 
 Jet::~Jet() = default;
 
-double Jet::mileageEstimate()
+double Jet::mileageEstimate(double time)
 {
-  if(fuelType=="Rocket" && numberOfEngines >= 2)
-    return std::floor(1.055 * mileage);
-  else return mileage;
+  if(fuelType=="Rocket" && numberOfEngines > 2)
+    return std::floor((1 + (numberOfEngines * 0.055)) * mileage * time);
+  else return mileage * time;
 }
 
 

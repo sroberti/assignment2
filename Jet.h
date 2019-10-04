@@ -22,7 +22,7 @@ public:
                string fuelType, int engineCount=1);
   virtual ~Jet();
   virtual string toString();
-  virtual double mileageEstimate();
+  virtual double mileageEstimate(double time);
 
 };
 
