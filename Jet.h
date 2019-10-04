@@ -17,7 +17,7 @@ private:
 
 public:
 
-  Jet();
+  Jet() = delete;
   explicit Jet(string manufacturer, string model,
                string fuelType, int engineCount=1);
   virtual ~Jet();
