@@ -16,8 +16,8 @@ double Skateboard::generateRandomizedMileage()
 }
 
 Skateboard::Skateboard(string brand, string model)
-  : mileage{generateRandomizedMileage()}
 {
+  mileage = generateRandomizedMileage();
   setBrand(brand);
   setModel(model);
 }
@@ -30,4 +30,4 @@ double Skateboard::mileageEstimate(double time)
   else return time * mileage;
 }
 
-
+Skateboard::~Skateboard() = default;

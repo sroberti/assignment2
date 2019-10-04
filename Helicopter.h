@@ -24,7 +24,6 @@ public:
   explicit Helicopter(string manufacturer, string model,
                string fuelType, int bladeCount=2);
   virtual ~Helicopter();
-  virtual string toString();
   virtual double mileageEstimate(double time);
 
 };

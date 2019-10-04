@@ -24,7 +24,6 @@ public:
   explicit Jet(string manufacturer, string model,
                string fuelType, int engineCount=1);
   virtual ~Jet();
-  virtual string toString();
   virtual double mileageEstimate(double time);
 
 };
